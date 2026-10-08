@@ -1,0 +1,12 @@
+{
+  "hash": "efb8a45d115ab9e6c354e4f385ec040a",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Box Office Numbers\"\n---\n\n::: {#f838a466 .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n```\n:::\n\n\nThis website explores a dataset of 104 well-known films released from 1980 to 2025. The dataset includes film budgets, worldwide revenues, runtimes, IMDb ratings, and franchise information. The following pages examine several relationships in the data.\n\n- [Budget and Revenue](budget-revenue.qmd)\n- [Runtime and Ratings](runtime-rating.qmd)\n- [The Bond Films](bond.qmd)\n\nAI usage: I used ChatGPT to clarify quiz instructions and troubleshoot code.\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "hash": "6e122afb028c0503614b3d136975cbe9",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Budget and Revenue\"\n---\n\n::: {#3c7b6bdc .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n```\n:::\n\n\n## Budget and Revenue\n\n@fig-budget-revenue shows the relationship between production budget and worldwide revenue.\n\n::: {#cell-fig-budget-revenue .cell execution_count=2}\n``` {.python .cell-code}\nplt.scatter(\n    films[\"budget_musd\"],\n    films[\"revenue_musd\"]\n)\n\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Worldwide revenue (million USD)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Production budget and worldwide revenue](budget-revenue_files/figure-html/fig-budget-revenue-output-1.png){#fig-budget-revenue width=602 height=429}\n:::\n:::\n\n\n",
+    "supporting": [
+      "budget-revenue_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
