@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "budget-revenue.html",
+    "href": "budget-revenue.html",
+    "title": "Budget and Revenue",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")"
+  },
+  {
+    "objectID": "budget-revenue.html#budget-and-revenue",
+    "href": "budget-revenue.html#budget-and-revenue",
+    "title": "Budget and Revenue",
+    "section": "Budget and Revenue",
+    "text": "Budget and Revenue\nFigure 1 shows the relationship between production budget and worldwide revenue.\n\nplt.scatter(\n    films[\"budget_musd\"],\n    films[\"revenue_musd\"]\n)\n\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Worldwide revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Production budget and worldwide revenue"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Box Office Numbers",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nThis website explores a dataset of 104 well-known films released from 1980 to 2025. The dataset includes film budgets, worldwide revenues, runtimes, IMDb ratings, and franchise information. The following pages examine several relationships in the data.\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films\n\nAI usage: I used ChatGPT to clarify quiz instructions and troubleshoot code."
+  },
+  {
+    "objectID": "runtime-rating.html",
+    "href": "runtime-rating.html",
+    "title": "Runtime and Ratings",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")"
+  },
+  {
+    "objectID": "runtime-rating.html#runtime-and-ratings",
+    "href": "runtime-rating.html#runtime-and-ratings",
+    "title": "Runtime and Ratings",
+    "section": "Runtime and Ratings",
+    "text": "Runtime and Ratings\nFigure 1 shows the relationship between film runtime and IMDb rating.\n\nplt.scatter(\n    films[\"runtime_min\"],\n    films[\"imdb_rating\"]\n)\n\nplt.xlabel(\"Runtime (minutes)\")\nplt.ylabel(\"IMDb rating\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Film runtime and IMDb rating"
+  },
+  {
+    "objectID": "runtime-rating.html#mean-rating-by-decade",
+    "href": "runtime-rating.html#mean-rating-by-decade",
+    "title": "Runtime and Ratings",
+    "section": "Mean rating by decade",
+    "text": "Mean rating by decade\n\nfilms[\"decade\"] = films[\"year\"] // 10 * 10\nfilms.groupby(\"decade\")[\"imdb_rating\"].mean().round(2)\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64"
+  }
+]
