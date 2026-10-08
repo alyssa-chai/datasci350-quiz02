@@ -22,11 +22,23 @@ touch budget-revenue.qmd
 touch runtime-rating.qmd
 
 9. 
+touch bond.qmd
 
+10. 
+quarto render
+ls -a
+git add .
+git commit -m "Add site pages and freeze"
 
+11.
+quarto publish gh-pages
+quarto render
+quarto publish gh-pages
 
-
-
+13.
+git add .
+git commit -m "Add command log"
+git push
 
 
 
