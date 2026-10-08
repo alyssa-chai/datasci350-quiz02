@@ -40,9 +40,17 @@ git add .
 git commit -m "Add command log"
 git push
 
-
-
-
+Bonus
+quarto render
+open _site/index.html
+quarto render
+open _site/index.html
+quarto render
+open _site/index.html
+git add .
+git commit -m "Add bonus styling"
+git push
+git status
 
 
 
