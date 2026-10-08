@@ -40,5 +40,19 @@
     "title": "Runtime and Ratings",
     "section": "Mean rating by decade",
     "text": "Mean rating by decade\n\nfilms[\"decade\"] = films[\"year\"] // 10 * 10\nfilms.groupby(\"decade\")[\"imdb_rating\"].mean().round(2)\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64"
+  },
+  {
+    "objectID": "bond.html",
+    "href": "bond.html",
+    "title": "The Bond Films",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")"
+  },
+  {
+    "objectID": "bond.html#the-bond-films",
+    "href": "bond.html#the-bond-films",
+    "title": "The Bond Films",
+    "section": "The Bond Films",
+    "text": "The Bond Films\nFigure 1 shows how worldwide revenue changed across the Bond films in the dataset.\n\nplt.plot(\n    bond[\"year\"],\n    bond[\"revenue_musd\"],\n    marker=\"o\"\n)\n\nplt.xlabel(\"Year\")\nplt.ylabel(\"Worldwide revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Worldwide revenue of James Bond films over time\n\n\n\n\n\nThe Bond films in the dataset span from 1995 to 2021."
   }
 ]
