@@ -51,12 +51,7 @@ git add .
 git commit -m "Add bonus styling"
 git push
 git status
-
-
-
-
-
-
-
-
-
+quarto publish gh-pages
+git add commands.txt
+git commit -m "Update command log"
+git push
